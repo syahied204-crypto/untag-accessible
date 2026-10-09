@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kontak dan formulir pesan Universitas 17 Agustus 1945 Surabaya.">
+  <title>Kontak - Universitas 17 Agustus 1945 Surabaya</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a href="#konten-utama" class="skip-link">Lewati ke konten utama</a>
+
+  <header class="header-situs">
+    <div class="wadah">
+      <p class="merek">UNTAG Surabaya</p>
+      <nav aria-label="Navigasi utama">
+        <ul class="menu">
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="profil.html">Profil</a></li>
+          <li><a href="akademik.html">Akademik</a></li>
+          <li><a href="berita.html">Berita</a></li>
+          <li><a href="kontak.html" aria-current="page">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="konten-utama" tabindex="-1">
+    <section class="hero" aria-labelledby="judul-kontak">
+      <div class="wadah">
+        <h1 id="judul-kontak">Kontak</h1>
+        <p>Hubungi Universitas 17 Agustus 1945 Surabaya melalui informasi di bawah atau kirim pesan lewat formulir.</p>
+      </div>
+    </section>
+
+    <section aria-labelledby="judul-info-kontak">
+      <div class="wadah">
+        <h2 id="judul-info-kontak">Informasi Kontak</h2>
+        <dl class="data-singkat">
+          <dt>Alamat</dt>
+          <dd>Jl. Semolowaru No. 45, Surabaya 60118</dd>
+          <dt>Jam layanan</dt>
+          <dd>Senin sampai Jumat, 08.00 sampai 16.00 WIB (contoh)</dd>
+        </dl>
+      </div>
+    </section>
+
+    <section aria-labelledby="judul-form">
+      <div class="wadah">
+        <h2 id="judul-form">Kirim Pesan</h2>
+        <p>Kolom bertanda <span aria-hidden="true">*</span><span class="sr-only">bintang</span> wajib diisi. Formulir ini hanya contoh untuk tugas dan tidak mengirim data ke server.</p>
+
+        <div id="ringkasan-error" class="ringkasan-error" tabindex="-1" hidden></div>
+
+        <form id="form-kontak" class="form-kontak" novalidate>
+          <div class="kolom-form">
+            <label for="nama">Nama lengkap <span aria-hidden="true">*</span></label>
+            <input type="text" id="nama" name="nama" autocomplete="name" required aria-describedby="error-nama">
+            <p id="error-nama" class="pesan-error"></p>
+          </div>
+
+          <div class="kolom-form">
+            <label for="email">Alamat email <span aria-hidden="true">*</span></label>
+            <p id="bantuan-email" class="bantuan">Contoh: nama@email.com</p>
+            <input type="email" id="email" name="email" autocomplete="email" required aria-describedby="bantuan-email error-email">
+            <p id="error-email" class="pesan-error"></p>
+          </div>
+
+          <div class="kolom-form">
+            <label for="pesan">Pesan <span aria-hidden="true">*</span></label>
+            <textarea id="pesan" name="pesan" rows="5" required aria-describedby="error-pesan"></textarea>
+            <p id="error-pesan" class="pesan-error"></p>
+          </div>
+
+          <button type="submit" class="tombol-kirim">Kirim pesan</button>
+        </form>
+
+        <p id="status-form" class="status-form" role="status"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-situs">
+    <div class="wadah">
+      <p>Jl. Semolowaru No. 45, Surabaya 60118</p>
+      <p><a href="#konten-utama">Kembali ke konten utama</a></p>
+    </div>
+  </footer>
+
+  <script src="kontak.js"></script>
+</body>
+</html>

@@ -199,3 +199,111 @@ tbody th {
   color: #0b3d6e;
   margin: 0;
 }
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.form-kontak {
+  max-width: 36rem;
+  margin-top: 1rem;
+}
+
+.kolom-form {
+  margin-bottom: 1.25rem;
+}
+
+.kolom-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.kolom-form input,
+.kolom-form textarea {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  font: inherit;
+  padding: 0.6rem;
+  border: 2px solid #767676;
+  border-radius: 4px;
+  background-color: #ffffff;
+  color: #1a1a1a;
+}
+
+.kolom-form input:focus-visible,
+.kolom-form textarea:focus-visible {
+  outline: 3px solid #ff8c00;
+  outline-offset: 2px;
+}
+
+.kolom-form [aria-invalid="true"] {
+  border-color: #b00020;
+}
+
+.bantuan {
+  margin: 0 0 0.25rem;
+  color: #444444;
+}
+
+.pesan-error {
+  margin: 0.25rem 0 0;
+  color: #b00020;
+  font-weight: bold;
+}
+
+.pesan-error:empty {
+  display: none;
+}
+
+.ringkasan-error {
+  border: 3px solid #b00020;
+  background-color: #fdecee;
+  padding: 1rem;
+  margin: 1rem 0;
+  max-width: 36rem;
+}
+
+.ringkasan-error h3 {
+  margin-top: 0;
+  color: #b00020;
+}
+
+.ringkasan-error a {
+  color: #7a0016;
+}
+
+.ringkasan-error:focus-visible {
+  outline: 3px solid #ff8c00;
+  outline-offset: 2px;
+}
+
+.tombol-kirim {
+  font: inherit;
+  font-weight: bold;
+  padding: 0.7rem 1.5rem;
+  border: 2px solid #0b3d6e;
+  background-color: #0b3d6e;
+  color: #ffffff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.tombol-kirim:focus-visible {
+  outline: 3px solid #ff8c00;
+  outline-offset: 2px;
+}
+
+.status-form {
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #0b5a2a;
+}
