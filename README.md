@@ -11,7 +11,7 @@ Final Challenge mata kuliah Pemrograman Web: website kampus yang dirancang akses
 - [x] Beranda (`index.html`)
 - [x] Profil Kampus (`profil.html`)
 - [x] Informasi Akademik (`akademik.html`)
-- [ ] Berita dan Pengumuman (`berita.html`)
+- [x] Berita dan Pengumuman (`berita.html`)
 - [ ] Kontak (`kontak.html`)
 
 ## Fitur Aksesibilitas
@@ -22,6 +22,7 @@ Final Challenge mata kuliah Pemrograman Web: website kampus yang dirancang akses
 - Indikator fokus keyboard yang jelas (garis oranye)
 - Tabel dengan `caption` dan atribut `scope` (halaman Akademik)
 - Area tabel dapat digulir dan difokus dengan keyboard
+- Filter berita dengan tombol yang dapat dioperasikan keyboard (`aria-pressed`) dan jumlah hasil diumumkan lewat `role="status"`
 - Tata letak responsif untuk layar kecil
 
 ## Teknologi
