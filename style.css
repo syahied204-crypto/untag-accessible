@@ -106,3 +106,39 @@ a { color: #0a4fa3; }
   .data-singkat { grid-template-columns: 1fr; gap: 0; }
   .data-singkat dd { margin-bottom: .75rem; }
 }
+
+.tabel-wrap {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+caption {
+  text-align: left;
+  font-weight: bold;
+  padding: 0.5rem 0;
+}
+
+th, td {
+  border: 1px solid #767676;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+thead th {
+  background-color: #0b3d6e;
+  color: #ffffff;
+}
+
+tbody th {
+  background-color: #eef2f7;
+}
+
+.tabel-wrap:focus-visible {
+  outline: 3px solid #ff8c00;
+  outline-offset: 2px;
+}
