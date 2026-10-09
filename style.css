@@ -142,3 +142,60 @@ tbody th {
   outline: 3px solid #ff8c00;
   outline-offset: 2px;
 }
+[hidden] {
+  display: none !important;
+}
+
+.filter-berita {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.tombol-filter {
+  font: inherit;
+  padding: 0.5rem 1rem;
+  border: 2px solid #0b3d6e;
+  background-color: #ffffff;
+  color: #0b3d6e;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.tombol-filter[aria-pressed="true"] {
+  background-color: #0b3d6e;
+  color: #ffffff;
+}
+
+.tombol-filter:focus-visible {
+  outline: 3px solid #ff8c00;
+  outline-offset: 2px;
+}
+
+.status-filter {
+  margin: 0 0 1rem;
+}
+
+.daftar-berita {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 1rem;
+}
+
+.kartu-berita {
+  border: 1px solid #767676;
+  border-radius: 6px;
+  padding: 1rem;
+  background-color: #ffffff;
+}
+
+.kartu-berita h3 {
+  margin-top: 0.25rem;
+}
+
+.kartu-berita .kategori {
+  font-weight: bold;
+  color: #0b3d6e;
+  margin: 0;
+}

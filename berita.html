@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Berita dan pengumuman Universitas 17 Agustus 1945 Surabaya.">
+  <title>Berita dan Pengumuman - Universitas 17 Agustus 1945 Surabaya</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a href="#konten-utama" class="skip-link">Lewati ke konten utama</a>
+
+  <header class="header-situs">
+    <div class="wadah">
+      <p class="merek">UNTAG Surabaya</p>
+      <nav aria-label="Navigasi utama">
+        <ul class="menu">
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="profil.html">Profil</a></li>
+          <li><a href="akademik.html">Akademik</a></li>
+          <li><a href="berita.html" aria-current="page">Berita</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="konten-utama" tabindex="-1">
+    <section class="hero" aria-labelledby="judul-berita">
+      <div class="wadah">
+        <h1 id="judul-berita">Berita dan Pengumuman</h1>
+        <p>Kabar terbaru dari Universitas 17 Agustus 1945 Surabaya. Berita pada halaman ini adalah contoh untuk keperluan tugas.</p>
+      </div>
+    </section>
+
+    <section aria-labelledby="judul-daftar-berita">
+      <div class="wadah">
+        <h2 id="judul-daftar-berita">Daftar Berita</h2>
+
+        <div class="filter-berita" role="group" aria-label="Filter kategori berita">
+          <button type="button" class="tombol-filter" data-filter="semua" aria-pressed="true">Semua</button>
+          <button type="button" class="tombol-filter" data-filter="akademik" aria-pressed="false">Akademik</button>
+          <button type="button" class="tombol-filter" data-filter="kegiatan" aria-pressed="false">Kegiatan</button>
+          <button type="button" class="tombol-filter" data-filter="pengumuman" aria-pressed="false">Pengumuman</button>
+        </div>
+
+        <p id="status-filter" class="status-filter" role="status">Menampilkan 6 dari 6 berita.</p>
+
+        <div class="daftar-berita">
+          <article class="kartu-berita" data-kategori="akademik">
+            <p class="kategori">Akademik</p>
+            <h3>Pembukaan Registrasi Semester Ganjil</h3>
+            <p><time datetime="2026-08-03">3 Agustus 2026</time></p>
+            <p>Registrasi dan pengisian KRS semester ganjil dibuka mulai 10 Agustus 2026. Mahasiswa diminta menyelesaikan pembayaran sebelum mengisi KRS.</p>
+          </article>
+
+          <article class="kartu-berita" data-kategori="kegiatan">
+            <p class="kategori">Kegiatan</p>
+            <h3>Kegiatan Pengenalan Kehidupan Kampus</h3>
+            <p><time datetime="2026-08-17">17 Agustus 2026</time></p>
+            <p>Mahasiswa baru mengikuti kegiatan pengenalan kampus yang memperkenalkan fasilitas, organisasi mahasiswa, dan tata tertib.</p>
+          </article>
+
+          <article class="kartu-berita" data-kategori="pengumuman">
+            <p class="kategori">Pengumuman</p>
+            <h3>Jadwal Layanan Perpustakaan</h3>
+            <p><time datetime="2026-09-01">1 September 2026</time></p>
+            <p>Perpustakaan melayani peminjaman buku setiap hari kerja. Mahasiswa diminta membawa kartu mahasiswa saat meminjam.</p>
+          </article>
+
+          <article class="kartu-berita" data-kategori="akademik">
+            <p class="kategori">Akademik</p>
+            <h3>Informasi Ujian Tengah Semester</h3>
+            <p><time datetime="2026-09-21">21 September 2026</time></p>
+            <p>Ujian Tengah Semester dilaksanakan pada 5 sampai 16 Oktober 2026. Jadwal lengkap dapat dilihat pada halaman Akademik.</p>
+          </article>
+
+          <article class="kartu-berita" data-kategori="kegiatan">
+            <p class="kategori">Kegiatan</p>
+            <h3>Seminar Aksesibilitas Web</h3>
+            <p><time datetime="2026-09-28">28 September 2026</time></p>
+            <p>Program studi Teknik Informatika mengadakan seminar tentang pengembangan website yang dapat diakses oleh semua pengguna.</p>
+          </article>
+
+          <article class="kartu-berita" data-kategori="pengumuman">
+            <p class="kategori">Pengumuman</p>
+            <h3>Libur dan Perubahan Jadwal Perkuliahan</h3>
+            <p><time datetime="2026-10-02">2 Oktober 2026</time></p>
+            <p>Perubahan jadwal perkuliahan akan diumumkan melalui koordinator kelas masing-masing. Mahasiswa diminta memeriksa pengumuman secara berkala.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-situs">
+    <div class="wadah">
+      <p>Jl. Semolowaru No. 45, Surabaya 60118</p>
+      <p><a href="#konten-utama">Kembali ke konten utama</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
