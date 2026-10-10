@@ -307,3 +307,27 @@ tbody th {
   font-weight: bold;
   color: #0b5a2a;
 }
+.linimasa {
+  list-style: none;
+  margin: 1rem 0 0;
+  padding: 0 0 0 1rem;
+  border-left: 3px solid #0b3d6e;
+}
+
+.linimasa > li {
+  margin-bottom: 1.25rem;
+}
+
+.linimasa > li > strong {
+  display: block;
+  color: #0b3d6e;
+}
+
+.linimasa p {
+  margin: 0.25rem 0 0;
+}
+
+.linimasa ul {
+  margin: 0.25rem 0 0;
+  padding-left: 1.25rem;
+}
